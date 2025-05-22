@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato - DiscorMod</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #5865F2;
+      --background: #2C2F33;
+      --white: #FFFFFF;
+      --accent: #7289DA;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--background);
+      color: var(--white);
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 30px 20px;
+      background: var(--background);
+      text-align: center;
+      font-size: 2em;
+      color: var(--primary);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .content h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      color: var(--primary);
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    .content p {
+      font-size: 1.1em;
+      color: #ccc;
+      max-width: 600px;
+      animation: fadeIn 2s ease-out;
+    }
+
+    .btn-back {
+      margin-top: 40px;
+      padding: 12px 24px;
+      background-color: var(--primary);
+      color: var(--white);
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1em;
+      font-weight: bold;
+      transition: 0.4s ease;
+      animation: pulse 2s infinite;
+      box-shadow: 0 0 10px #5865F2;
+    }
+
+    .btn-back:hover {
+      background-color: var(--accent);
+      box-shadow: 0 0 20px var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #23272A;
+      font-size: 0.9em;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes pulse {
+      0% {box-shadow: 0 0 10px #5865F2;}
+      50% {box-shadow: 0 0 20px #5865F2;}
+      100% {box-shadow: 0 0 10px #5865F2;}
+    }
+  </style>
+</head>
+<body>
+
+  <header>Contato</header>
+
+  <div class="content">
+    <h2>Em breve!</h2>
+    <p>Estamos preparando nosso canal de contato para melhor atendê-lo. Em breve, esta página terá um formulário moderno para você falar com a equipe DiscorMod.</p>
+    
+    <a class="btn-back" href="index.html"><i class="fas fa-arrow-left"></i> Voltar para o início</a>
+  </div>
+
+  <footer>&copy; 2025 DiscorMod. Todos os direitos reservados.</footer>
+
+</body>
+</html>
